@@ -1,0 +1,19 @@
+{
+    "name": "Eventique_Mailing_API",
+    "description": "Mailing API for Eventiqueev (api.eventique.intellx.co.in)",
+    "created": "23/11/2021",
+    "completed": "true",
+    "modules": [
+        "flask",
+        "email",
+        "ssl",
+        "smtplib"
+    ],
+    "hosting": {
+        "hosted": "true",
+        "host": "vercel",
+        "url": "eventiqueapi.vercel.app",
+        "protocol": "HTTPS"
+    },
+    "code": "EV-23112021-114447"
+}

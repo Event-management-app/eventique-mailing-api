@@ -1,0 +1,70 @@
+<table cellspacing="0" cellpadding="0" width="650" border="0" style="font-family:Helvetica,Arial,sans-serif;width:655px;padding-bottom:5px;padding-top:5px;padding-left:5px;margin:0px auto;padding-right:5px;background-color:#ffffff">
+            <tbody>
+               <tr>
+                  <td>
+                     <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Helvetica,Arial,sans-serif;min-width:100%">
+                        <tbody>
+                           <tr>
+                              <td width="150" style="border-top:{{color}} 5px solid;padding-bottom:12px;padding-top:12px;padding-left:8px;padding-right:8px">
+                                 <span style="max-width:150px;float:left"><b>{{name}}.</b></span>
+                              </td>
+                              <td style="font-size:16px;max-width:470px;border-top:{{color}} 5px solid;font-weight:bold;padding-bottom:12px;text-align:right;padding-top:12px;padding-left:5px;padding-right:5px;margin-right:2px">
+                                 {{subject}}
+                              </td>
+                              {% if image!=0 %}
+                              <td width="100" style="font-size:16px;max-width:100px;border-top:{{color}} 5px solid;font-weight:bold;padding-bottom:12px;text-align:right;padding-top:12px;padding-left:4px;padding-right:4px">
+                                 <img src="{{image}}" style="width:100px" class="CToWUd">
+                              </td>
+                              {% endif %}
+                           </tr>
+                        </tbody>
+                     </table>
+                     <br>
+                     <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Helvetica,Arial,sans-serif;min-width:100%">
+                        <tbody>
+                           <tr>
+                              <td style="padding-bottom:12px;padding-top:12px;padding-left:12px;padding-right:8px">
+                                 <span style="float:left">
+hey,<br>
+<br>
+{{content|safe}}
+
+                                 </span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Helvetica,Arial,sans-serif;min-width:100%">
+                        <tbody>
+                           <tr>
+                              <td width="150" style="padding-bottom:12px;padding-top:12px;padding-left:12px;padding-right:8px">
+                                 <span style="max-width:150px;float:left">yours truly,<br>{{name}}.</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table cellspacing="0" cellpadding="0" width="100%" border="0" style="font-family:Helvetica,Arial,sans-serif;min-width:100%">
+                        <tbody>
+                           <tr>
+                              <td width="150" style="border-top:{{color}} 5px solid;padding-bottom:12px;padding-top:12px;padding-left:8px;padding-right:8px">
+                                 <span style="max-width:150px;float:left"></span>
+                              </td>
+                              <td style="font-size:16px;max-width:470px;border-top:{{color}} 5px solid;font-weight:bold;padding-bottom:12px;text-align:right;padding-top:12px;padding-left:5px;padding-right:5px;margin-right:2px">
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </td></tr></tbody>
+{% if confid=='true' %}
+                     <tbody>
+                           <tr>
+                              <td style="padding-bottom:12px;padding-top:12px;padding-left:12px;color:grey">
+                                 <span style="float:left">the information contained in this e-mail message and any attached files are confidential. if you have incorrectly recieved this e-mail, please notify us by a reply e-mail and delete all copies of this e-mail on your device. if you are an incorrect recepient, any act to record, use, modify, make copy of, download, misues this e-mail is unauthorized.</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                        {% endif %}
+                  
+               
+            
+         </table>
